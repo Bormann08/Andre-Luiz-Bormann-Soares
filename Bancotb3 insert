@@ -1,0 +1,198 @@
+INSERT INTO cliente (cpf, nome, dataNasc) VALUES
+('123.456.789-00', 'João Silva', '1980-05-10'),
+('987.654.321-00', 'Maria Oliveira', '1992-12-01');
+
+INSERT INTO colaborador (cpf, nome, cargo, registo_prof, escolaridade, salario) VALUES
+('111.222.333-44', 'Carlos Souza', 'Dentista', 'CRD12345', 'Ensino Superior', 5500.00),
+('555.666.777-88', 'Ana Beatriz', 'Recepcionista', 'REG12345', 'Ensino Médio', 2500.00);
+
+INSERT INTO telefone_cli (tel1, tel2, cliente_cpf) VALUES
+('11999998888', '11988887777', '123.456.789-00'),
+('11977776666', NULL, '987.654.321-00');
+
+INSERT INTO tel_colab (tel1, tel2, colaborador_cpf) VALUES
+('11966665555', NULL, '111.222.333-44'),
+('11955554444', '11944443333', '555.666.777-88');
+
+INSERT INTO cliente (cpf, nome, dataNasc) VALUES
+('111.222.333-44', 'Carlos Pereira', '1985-07-23'),
+('222.333.444-55', 'Fernanda Lima', '1990-04-15'),
+('333.444.555-66', 'Roberto Souza', '1978-11-30'),
+('444.555.666-77', 'Amanda Costa', '1995-09-12'),
+('555.666.777-88', 'Luciana Mendes', '1988-01-05'),
+('666.777.888-99', 'Paulo Santos', '1972-06-22'),
+('777.888.999-00', 'Juliana Alves', '1993-03-14'),
+('888.999.111-22', 'Rafael Monteiro', '1981-10-09'),
+('999.111.222-33', 'Mariana Duarte', '1994-08-21'),
+('111.333.555-77', 'Felipe Araújo', '1989-12-07'),
+('222.444.666-88', 'Patrícia Gomes', '1986-02-19'),
+('333.555.777-99', 'Gabriel Ferreira', '1991-05-25'),
+('444.666.888-00', 'Beatriz Martins', '1987-09-29'),
+('555.777.999-11', 'Leonardo Nascimento', '1996-04-02'),
+('666.888.000-22', 'Isabela Barros', '1990-07-16'),
+('777.999.111-33', 'Renato Farias', '1983-03-31'),
+('888.000.111-44', 'Lívia Batista', '1997-11-05'),
+('999.111.333-55', 'Thiago Rocha', '1976-06-18'),
+('111.222.444-66', 'Camila Teixeira', '1984-10-24'),
+('222.333.555-77', 'André Matos', '1992-12-12');
+
+INSERT INTO colaborador (cpf, nome, cargo, registo_prof, escolaridade, salario) VALUES
+('123.456.789-00', 'Roberto Martins', 'Dentista', 'CRD54321', 'Ensino Superior', 6000.00),
+('987.654.321-00', 'Fernanda Silva', 'Recepcionista', 'REG67890', 'Ensino Médio', 2800.00),
+('112.233.445-56', 'Marcelo Lima', 'Assistente Administrativo', 'REG56789', 'Ensino Médio', 3200.00),
+('223.344.556-67', 'Juliana Farias', 'Técnico em Radiologia', 'CRTR12345', 'Ensino Técnico', 3800.00),
+('334.455.667-78', 'Rodrigo Santos', 'Higienista', 'CRD99887', 'Ensino Superior', 4500.00),
+('445.566.778-89', 'Paula Castro', 'Recepcionista', 'REG23456', 'Ensino Médio', 2600.00),
+('556.677.889-90', 'Leonardo Almeida', 'Dentista', 'CRD87654', 'Ensino Superior', 5900.00),
+('667.788.990-01', 'Isabela Torres', 'Auxiliar de Limpeza', 'REG98765', 'Ensino Fundamental', 1900.00),
+('778.899.001-12', 'Victor Rocha', 'Assistente Administrativo', 'REG34567', 'Ensino Médio', 3100.00),
+('889.900.112-23', 'Amanda Ribeiro', 'Técnico em Radiologia', 'CRTR67890', 'Ensino Técnico', 4000.00),
+('990.011.223-34', 'Marcos Vinicius', 'Dentista', 'CRD11223', 'Ensino Superior', 6200.00),
+('101.112.334-45', 'Larissa Oliveira', 'Recepcionista', 'REG55678', 'Ensino Médio', 2700.00),
+('212.223.445-56', 'Gabriel Costa', 'Assistente Administrativo', 'REG76543', 'Ensino Médio', 3300.00),
+('323.334.556-67', 'Renata Freitas', 'Higienista', 'CRD33445', 'Ensino Superior', 4600.00),
+('434.445.667-78', 'Felipe Sousa', 'Técnico em Radiologia', 'CRTR34567', 'Ensino Técnico', 4100.00),
+('545.556.778-89', 'Bianca Melo', 'Auxiliar de Limpeza', 'REG12389', 'Ensino Fundamental', 1800.00),
+('656.667.889-90', 'Thiago Fernandes', 'Dentista', 'CRD99812', 'Ensino Superior', 6100.00),
+('767.778.990-01', 'Carla Nunes', 'Recepcionista', 'REG89012', 'Ensino Médio', 2550.00),
+('878.889.001-12', 'Lucas Gonçalves', 'Assistente Administrativo', 'REG34589', 'Ensino Médio', 3250.00),
+('989.900.112-23', 'Bruna Vasconcelos', 'Higienista', 'CRD12354', 'Ensino Superior', 4700.00);
+
+INSERT INTO telefone_cli (tel1, tel2, cliente_cpf) VALUES
+('11987654321', '11976543210', '111.222.333-44'),
+('11965432123', NULL, '222.333.444-55'),
+('11954321678', '11943216543', '333.444.555-66'),
+('11987651234', NULL, '444.555.666-77'),
+('11999887766', '11988776655', '555.666.777-88'),
+('11977665544', '11966554433', '666.777.888-99'),
+('11955443322', NULL, '777.888.999-00'),
+('11944332211', '11933221100', '888.999.111-22'),
+('11922334455', NULL, '999.111.222-33'),
+('11933445566', '11944556677', '111.333.555-77'),
+('11911223344', NULL, '222.444.666-88'),
+('11999887755', '11988776644', '333.555.777-99'),
+('11977664433', NULL, '444.666.888-00'),
+('11966554422', '11955443311', '555.777.999-11'),
+('11944332299', NULL, '666.888.000-22'),
+('11999881122', '11988771133', '777.999.111-33'),
+('11977665533', NULL, '888.000.111-44'),
+('11966554488', '11955443399', '999.111.333-55'),
+('11944332277', NULL, '111.222.444-66'),
+('11933221166', '11922110055', '222.333.555-77');
+
+INSERT INTO tel_colab (tel1, tel2, colaborador_cpf) VALUES
+('11987654321', '11976543210', '123.456.789-00'),
+('11965432123', NULL, '987.654.321-00'),
+('11954321678', '11943216543', '112.233.445-56'),
+('11987651234', NULL, '223.344.556-67'),
+('11999887766', '11988776655', '334.455.667-78'),
+('11977665544', NULL, '445.566.778-89'),
+('11966554433', '11955443322', '556.677.889-90'),
+('11955443311', NULL, '667.788.990-01'),
+('11944332299', '11933221188', '778.899.001-12'),
+('11933221177', NULL, '889.900.112-23'),
+('11922110066', '11911009955', '990.011.223-34'),
+('11944332244', NULL, '101.112.334-45'),
+('11999881122', '11988771133', '212.223.445-56'),
+('11977665533', NULL, '323.334.556-67'),
+('11966554488', '11955443377', '434.445.667-78'),
+('11944332266', NULL, '545.556.778-89'),
+('11933221155', '11922110044', '656.667.889-90'),
+('11911009933', NULL, '767.778.990-01'),
+('11999887711', '11988776622', '878.889.001-12'),
+('11977665500', NULL, '989.900.112-23');
+
+INSERT INTO despesa (colaborador_cpf) VALUES
+('123.456.789-00'), -- Roberto Martins
+('987.654.321-00'), -- Fernanda Silva
+('112.233.445-56'), -- Marcelo Lima
+('223.344.556-67'), -- Juliana Farias
+('334.455.667-78'), -- Rodrigo Santos
+('445.566.778-89'), -- Paula Castro
+('556.677.889-90'), -- Leonardo Almeida
+('667.788.990-01'), -- Isabela Torres
+('778.899.001-12'), -- Victor Rocha
+('889.900.112-23'), -- Amanda Ribeiro
+('990.011.223-34'), -- Marcos Vinicius
+('101.112.334-45'), -- Larissa Oliveira
+('212.223.445-56'), -- Gabriel Costa
+('323.334.556-67'), -- Renata Freitas
+('434.445.667-78'), -- Felipe Sousa
+('545.556.778-89'), -- Bianca Melo
+('656.667.889-90'), -- Thiago Fernandes
+('767.778.990-01'), -- Carla Nunes
+('878.889.001-12'), -- Lucas Gonçalves
+('989.900.112-23'); -- Bruna Vasconcelos
+
+
+
+INSERT INTO compra (data, valor, descricao, despesa_iddespesa) VALUES
+('2024-01-15 10:30:00', 250.00, 'Compra de material de escritório', 12),
+('2024-02-10 14:00:00', 550.00, 'Compra de material odontológico', 1),
+('2024-03-05 09:45:00', 1200.00, 'Compra de equipamento de radiografia', 3),
+('2024-03-20 16:30:00', 320.00, 'Compra de insumos médicos', 20),
+('2024-04-10 11:20:00', 450.00, 'Compra de produtos de limpeza', 11),
+('2024-04-25 13:15:00', 750.00, 'Compra de cadeira odontológica', 16),
+('2024-05-08 17:10:00', 210.00, 'Compra de luvas e máscaras', 2),
+('2024-06-12 09:55:00', 680.00, 'Compra de anestésicos', 13),
+('2024-07-18 15:25:00', 950.00, 'Compra de aparelho de ultrassom', 14),
+('2024-08-02 08:40:00', 1050.00, 'Compra de software de gestão clínica', 16),
+('2024-08-19 14:50:00', 400.00, 'Compra de aventais descartáveis', 15),
+('2024-09-05 10:15:00', 1350.00, 'Compra de autoclave', 18),
+('2024-09-22 12:35:00', 280.00, 'Compra de algodão e gaze', 17),
+('2024-10-07 11:00:00', 520.00, 'Compra de materiais para próteses', 5),
+('2024-10-21 15:45:00', 730.00, 'Compra de resinas dentárias', 19),
+('2024-11-03 16:10:00', 980.00, 'Compra de impressora 3D', 4),
+('2024-11-18 09:20:00', 470.00, 'Compra de papel higiênico e toalhas', 6),
+('2024-12-01 13:00:00', 1500.00, 'Compra de scanner intraoral', 8),
+('2024-12-10 10:45:00', 600.00, 'Compra de seladora térmica', 9),
+('2024-12-24 11:30:00', 250.00, 'Compra de adesivos e cimentos dentários', 7);
+
+
+INSERT INTO endereco_colaborador (cpf, rua, numero, bairro, cidade, estado, cep) VALUES
+('123.456.789-00', 'Rua das Flores', '123', 'Centro', 'São Paulo', 'SP', '01001-000'),
+('987.654.321-00', 'Avenida Paulista', '456', 'Bela Vista', 'São Paulo', 'SP', '01310-000'),
+('112.233.445-56', 'Rua do Comércio', '789', 'Pinheiros', 'São Paulo', 'SP', '05422-000'),
+('223.344.556-67', 'Rua das Acácias', '10', 'Jardim América', 'São Paulo', 'SP', '01440-000'),
+('334.455.667-78', 'Praça da Sé', '20', 'Sé', 'São Paulo', 'SP', '01001-300'),
+('445.566.778-89', 'Rua da Paz', '30', 'Liberdade', 'São Paulo', 'SP', '01501-000'),
+('556.677.889-90', 'Avenida Rio Branco', '40', 'Centro', 'Rio de Janeiro', 'RJ', '20040-001'),
+('667.788.990-01', 'Rua da Praia', '50', 'Copacabana', 'Rio de Janeiro', 'RJ', '22070-001'),
+('778.899.001-12', 'Rua das Laranjeiras', '60', 'Laranjeiras', 'Rio de Janeiro', 'RJ', '22240-002'),
+('889.900.112-23', 'Avenida do Contorno', '70', 'Savassi', 'Belo Horizonte', 'MG', '30110-000'),
+('990.011.223-34', 'Rua dos Inconfidentes', '80', 'Centro', 'Belo Horizonte', 'MG', '30140-000'),
+('101.112.334-45', 'Rua da Liberdade', '90', 'Funcionários', 'Belo Horizonte', 'MG', '30150-000'),
+('212.223.445-56', 'Avenida Afonso Pena', '100', 'Centro', 'Belo Horizonte', 'MG', '30130-000'),
+('323.334.556-67', 'Rua Floriano Peixoto', '110', 'Centro', 'Curitiba', 'PR', '80010-000'),
+('434.445.667-78', 'Rua XV de Novembro', '120', 'Centro', 'Curitiba', 'PR', '80020-000'),
+('545.556.778-89', 'Avenida Sete de Setembro', '130', 'Centro', 'Curitiba', 'PR', '80040-000'),
+('656.667.889-90', 'Rua das Noivas', '140', 'Batel', 'Curitiba', 'PR', '80420-000'),
+('767.778.990-01', 'Rua da Alegria', '150', 'Água Verde', 'Curitiba', 'PR', '80050-000'),
+('878.889.001-12', 'Avenida Ipiranga', '160', 'Centro', 'Porto Alegre', 'RS', '90040-000'),
+('989.900.112-23', 'Rua dos Andradas', '170', 'Centro', 'Porto Alegre', 'RS', '90010-000');
+
+INSERT INTO endereco_cliente (cpf, rua, numero, bairro, cidade, estado, cep) VALUES
+('123.456.789-00', 'Rua das Palmeiras', '200', 'Centro', 'São Paulo', 'SP', '01002-000'),
+('987.654.321-00', 'Avenida Brasil', '300', 'Bela Vista', 'São Paulo', 'SP', '01311-000');
+
+INSERT INTO endereco_cliente (cpf, rua, numero, bairro, cidade, estado, cep) VALUES
+('111.222.333-44', 'Rua da Paz', '101', 'Jardim das Flores', 'São Paulo', 'SP', '01010-001'),
+('222.333.444-55', 'Avenida São João', '202', 'Centro', 'São Paulo', 'SP', '02020-002'),
+('333.444.555-66', 'Rua das Acácias', '303', 'Vila Nova', 'São Paulo', 'SP', '03030-003'),
+('444.555.666-77', 'Rua do Sol', '404', 'Bela Vista', 'São Paulo', 'SP', '04040-004'),
+('555.666.777-88', 'Avenida das Américas', '505', 'Jardim América', 'São Paulo', 'SP', '05050-005'),
+('666.777.888-99', 'Rua dos Lírios', '606', 'Morumbi', 'São Paulo', 'SP', '06060-006'),
+('777.888.999-00', 'Avenida das Nações', '707', 'Alto da Boa Vista', 'São Paulo', 'SP', '07070-007'),
+('888.999.111-22', 'Rua do Comércio', '808', 'Centro', 'São Paulo', 'SP', '08080-008'),
+('999.111.222-33', 'Rua do Limoeiro', '909', 'Jardim São Paulo', 'São Paulo', 'SP', '09090-009'),
+('111.333.555-77', 'Avenida Brasil', '1000', 'Bela Vista', 'São Paulo', 'SP', '10010-010'),
+('222.444.666-88', 'Rua dos Sábados', '1111', 'Vila Mariana', 'São Paulo', 'SP', '11111-011'),
+('333.555.777-99', 'Rua da Alegria', '1212', 'Santana', 'São Paulo', 'SP', '12121-012'),
+('444.666.888-00', 'Avenida da Liberdade', '1313', 'Liberdade', 'São Paulo', 'SP', '13131-013'),
+('555.777.999-11', 'Rua da Esperança', '1414', 'Vila Andrade', 'São Paulo', 'SP', '14141-014'),
+('666.888.000-22', 'Rua das Estrelas', '1515', 'Vila Olímpia', 'São Paulo', 'SP', '15151-015'),
+('777.999.111-33', 'Avenida do Futuro', '1616', 'Itaim Bibi', 'São Paulo', 'SP', '16161-016'),
+('888.000.111-44', 'Rua das Palmeiras', '1717', 'Jardim Paulista', 'São Paulo', 'SP', '17171-017'),
+('999.111.333-55', 'Avenida da Vitória', '1818', 'Pinheiros', 'São Paulo', 'SP', '18181-018'),
+('111.222.444-66', 'Rua dos Encontros', '1919', 'Morumbi', 'São Paulo', 'SP', '19191-019'),
+('222.333.555-77', 'Avenida do Sucesso', '2020', 'Centro', 'São Paulo', 'SP', '20202-020');
