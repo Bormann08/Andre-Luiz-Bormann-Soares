@@ -1,0 +1,16 @@
+select * from despesa;
+
+SELECT * FROM despesa WHERE iddespesa IN (1, 2, 3, 4, 5, 6, 7, 8 , 9, 11, 12, 13, 14, 15, 16);
+
+select * from compra;
+select * from endereco_cliente;
+
+SELECT * FROM colaborador WHERE cpf IN ('123.456.789-00', '987.654.321-00');
+SELECT * FROM cliente;
+
+SELECT c.cpf, c.nome, c.dataNasc, e.rua, e.numero, e.bairro, e.cidade, e.estado, e.cep
+FROM cliente c
+JOIN endereco_cliente e ON c.cpf = e.cpf
+WHERE e.cidade = 'São Paulo';
+
+select * from endereco_colaborador;
